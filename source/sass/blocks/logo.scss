@@ -1,0 +1,23 @@
+.logo {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+
+  img {
+    display: block;
+  }
+
+  @media (max-width: 1023px) {
+    position: static;
+    flex-shrink: 0;
+    transform: none;
+    width: 102px;
+    margin-left: 28px;
+
+    img {
+      width: 77px;
+      height: auto;
+    }
+  }
+}
