@@ -1,0 +1,121 @@
+.page-header {
+  letter-spacing: 1.2px;
+  color: #48494d;
+  transition: transform 0.3s ease;
+}
+
+.page-header__container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+
+  @media (max-width: 1023px) {
+    position: static;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+
+.page-header__bottom,
+.page-header__top {
+  padding-top: 54px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-header__top {
+  @media (max-width: 1023px) {
+    padding-top: 30px;
+  }
+}
+
+.page-header__bottom {
+  padding-top: 14px;
+  padding-bottom: 0;
+}
+
+.page-header__menu-toggle {
+  display: none;
+
+  @media (max-width: 1023px) {
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    align-self: center;
+    display: block;
+    padding: 2px;
+    background-color: #ffffff;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+    color: #c4c4c4;
+
+    &:focus {
+      outline: 0;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    .page-header__menu-toggle-bar,
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 3px;
+      margin-bottom: 9px;
+      border-radius: 3px;
+      background-color: currentColor;
+      transition: transform 0.3s ease;
+    }
+
+    .page-header__menu-toggle-bar,
+    .page-header__menu-toggle::after {
+      margin-bottom: 0;
+    }
+
+    .page-header__menu-toggle-bar {
+      margin-bottom: 9px;
+    }
+
+    .page-header__menu-toggle-bar,
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 3px;
+      margin-bottom: 9px;
+      border-radius: 3px;
+      background-color: currentColor;
+      transition: transform 0.3s ease;
+    }
+
+    .page-header__menu-toggle-bar,
+    .page-header__menu-toggle::after {
+      margin-bottom: 0;
+    }
+
+    .page-header__menu-toggle-bar {
+      margin-bottom: 9px;
+    }
+
+    .page-header__bottom {
+      padding-top: 0;
+    }
+
+    .page-header__menu-toggle--active .page-header__menu-toggle-bar {
+      opacity: 0;
+    }
+
+    .page-header__menu-toggle--active::before {
+      transform: translateY(12px) rotateZ(135deg);
+    }
+
+    .page-header__menu-toggle--active::after {
+      transform: translateY(-12px) rotateZ(-135deg);
+    }
+  }
+}
