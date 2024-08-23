@@ -1,0 +1,15 @@
+.menu-opened {
+  overflow: hidden;
+}
+
+.menu-opened .main,
+.menu-opened .page-header {
+  position: static;
+  transform: translateX(242px);
+}
+
+.menu-opened .menu {
+  height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
