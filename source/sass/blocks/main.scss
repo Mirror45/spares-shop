@@ -1,0 +1,27 @@
+.main {
+  flex-grow: 1;
+  padding-bottom: 65px;
+  transition: transform 0.3s ease;
+
+  @media (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+}
+
+.main--product-page {
+  padding-bottom: 75px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 70px
+  }
+}
+
+.main__container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
