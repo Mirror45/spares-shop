@@ -1,5 +1,4 @@
-'use strict';
-
+import "./menu.js"
 
 // Accordeon
 
