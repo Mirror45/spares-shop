@@ -43,12 +43,19 @@ const html = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/**/*.js')
     .pipe(terser())
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
+
+// const scripts = () => {
+//   return gulp.src('source/js/script.js')
+//     .pipe(terser())
+//     .pipe(rename("script.min.js"))
+//     .pipe(gulp.dest('build/js'))
+//     .pipe(browser.stream());
+// }
 
 // Images
 const optimizeImages = () => {
@@ -124,7 +131,7 @@ const watcher = () => {
   gulp.watch('source/img/**/*.{png,jpg}', gulp.series(optimizeImages));
   gulp.watch('source/img/icons/**/*.svg', gulp.series(sprite));
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/**/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
