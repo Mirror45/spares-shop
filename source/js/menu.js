@@ -1,6 +1,3 @@
-'use strict';
-
-
 (function () {
   const menu = document.querySelector('.menu');
   const menuToggle = document.querySelector('.page-header__menu-toggle');
