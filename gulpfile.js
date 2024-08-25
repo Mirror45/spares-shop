@@ -49,14 +49,6 @@ const scripts = () => {
     .pipe(browser.stream());
 }
 
-// const scripts = () => {
-//   return gulp.src('source/js/script.js')
-//     .pipe(terser())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest('build/js'))
-//     .pipe(browser.stream());
-// }
-
 // Images
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
