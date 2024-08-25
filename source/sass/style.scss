@@ -3,7 +3,9 @@
 @import "global/variables.scss";
 @import "global/visually-hidden.scss";
 @import "global/page.scss";
-@import "global/button.scss";
+
+// global
+@import "libs/slick-slider.scss";
 
 // blocks
 @import "blocks/page-header.scss";
@@ -13,4 +15,10 @@
 @import "blocks/nav.scss";
 @import "blocks/logo.scss";
 @import "blocks/no-js.scss";
+@import "blocks/main.scss";
+@import "blocks/button.scss";
+@import "blocks/notice.scss";
+@import "blocks/slider.scss";
+@import "blocks/action.scss";
+@import "blocks/countdown.scss";
 @import "blocks/page-footer.scss";

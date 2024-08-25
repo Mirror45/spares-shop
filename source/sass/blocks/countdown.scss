@@ -1,0 +1,42 @@
+.countdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 20px;
+
+  &::before {
+    position: absolute;
+    left: 30px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/timer.svg");
+  }
+}
+
+.countdown__dial {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: #48494d;
+}
+
+.countdown__dial:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -3px;
+  top: -1px;
+  display: inline;
+}
+
+.countdown__caption {
+  margin-top: -4px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #c4c4c4;
+}

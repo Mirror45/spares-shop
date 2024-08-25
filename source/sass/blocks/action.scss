@@ -1,0 +1,114 @@
+.action {
+  position: relative;
+  flex-direction: column;
+  width: 270px;
+  height: 397px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &::before {
+    content: "Акция";
+    position: absolute;
+    left: -31px;
+    top: 31px;
+    display: block;
+    width: 87px;
+    height: 25px;
+    transform: rotate(-90deg);
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(93.82deg, #9710e9 1.17%, #fd8d43 99.31%);
+  }
+}
+
+.action,
+.action.slick-slide {
+  display: flex;
+}
+
+.action__price {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.action__price-new {
+  padding-bottom: 5px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ff7931;
+}
+
+.action__price-new::after,
+.action__price-old::after,
+.countdown::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-image: url("../img/rouble-new.svg");
+}
+
+.action__price-old {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 20px;
+  line-height: 16px;
+  color: #a8a8a8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/diagonal.svg");
+}
+
+.action__price-old::after,
+.countdown::before {
+  width: 12px;
+  height: 13px;
+  background-image: url("../img/rouble-old.svg");
+}
+
+.action__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+.action__figcaption {
+  padding-top: 20px;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.action__footer {
+  flex-grow: 1;
+  margin-top: 12px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f0f0f4;
+}
+
+.action__footer-caption {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: #48494d;
+}
+
+.action__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
