@@ -1,0 +1,142 @@
+.search {
+  padding-top: 70px;
+  padding-bottom: 40px;
+
+  .search-input {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 1023px) {
+    .tabs__list-wrap {
+      margin-bottom: 12px;
+      overflow-x: auto;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .tabs__item {
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    .tabs__item:first-child {
+      padding-left: 20px;
+    }
+
+    .tabs__item:last-child {
+      padding-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tabs__list-wrap {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+
+    .tabs__item {
+      margin-right: 40px;
+    }
+
+    .tabs__item:first-child {
+      padding-left: 16px;
+    }
+
+    .tabs__item:last-child {
+      padding-right: 16px;
+    }
+
+    .search-input__clear-btn {
+      right: 45px;
+    }
+  }
+}
+
+.search__container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+
+.search-input {
+  position: relative;
+}
+
+.search__fields {
+  display: flex;
+  letter-spacing: 0.6px;
+
+  input {
+    flex-grow: 1;
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    background-color: #f0f0f4;
+    outline-offset: -2px;
+  }
+
+  .button {
+    margin-left: -5px;
+  }
+
+  @media (max-width: 767px) {
+    position: relative;
+
+    input {
+      padding-left: 10px;
+      padding-right: 45px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .button {
+      position: absolute;
+      right: 15px;
+      top: 13px;
+      min-width: auto;
+      padding: 0;
+      background-color: transparent;
+
+      &:hover::before {
+        opacity: 0.6;
+      }
+
+      &:active::before {
+        opacity: 0.3;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 23px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-image: url("../img/search-dark.svg");
+      }
+
+      .search__vh-mobile {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        word-wrap: normal;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+    }
+  }
+}
