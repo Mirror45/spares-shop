@@ -1,0 +1,42 @@
+.banner {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
+
+.banner__container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.banner__element {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1170px;
+  padding-top: 14.1%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/sale50@1x.jpg");
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/sale50@2x.jpg");
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 28.75%;
+    background-size: cover;
+  }
+}
