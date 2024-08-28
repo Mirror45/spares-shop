@@ -1,0 +1,183 @@
+.categories {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  letter-spacing: 0.7px;
+}
+
+.categories__container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+
+.categories__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 370px;
+    margin-top: -1px;
+    margin-left: 15px;
+    margin-right: 15px;
+    visibility: hidden;
+  }
+
+  @media (max-width: 1210px) {
+    &::after {
+      flex-grow: 1;
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: space-around;
+  }
+}
+
+.categories__item {
+  flex-shrink: 0;
+  height: 129px;
+  width: 370px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @media (max-width: 1210px) {
+    flex-grow: 1;
+    max-width: none;
+  }
+
+  @media (max-width: 767px) {
+    flex-shrink: 1;
+    min-width: 288px;
+    max-width: 370px;
+  }
+}
+
+.categories__wrap-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding: 20px 122px 20px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
+    .categories__title {
+      color: #ff7931;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 97px 16px 18px;
+  }
+}
+
+.categories__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: #48494d;
+}
+
+.categories__icon {
+  position: absolute;
+  bottom: 16px;
+  right: 25px;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background-color: #ff7931;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 767px) {
+    right: 3px;
+    bottom: -2px;
+    transform: scale(0.6);
+  }
+}
+
+.categories__icon--autochemicals::before {
+  width: 44px;
+  height: 65px;
+  background-image: url("../img/autochemicals.svg");
+}
+
+.categories__icon--tires::before {
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/tires.svg");
+}
+
+.categories__icon--tools::before {
+  width: 44px;
+  height: 82px;
+  background-image: url("../img/tools.svg");
+}
+
+.categories__icon--spares::before {
+  width: 56px;
+  height: 55px;
+  background-image: url("../img/spares.svg");
+}
+
+.categories__icon--autoelectronic::before {
+  width: 62px;
+  height: 49px;
+  background-image: url("../img/autoelectronic.svg");
+}
+
+.categories__icon--accessories::before {
+  width: 31px;
+  height: 65px;
+  background-image: url("../img/accessories.svg");
+}
+
+.categories__link {
+  text-decoration: none;
+  margin-top: auto;
+  color: #c4c4c4;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-image: url("../img/arrow-link.svg");
+  }
+}
+
+// .categories__wrap-link:hover .categories__title,
+// .wares__item:hover .wares__figcaption,
+// .wares__item:hover .wares__price {
+//   color: #ff7931;
+// }
