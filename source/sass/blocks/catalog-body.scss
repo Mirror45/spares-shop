@@ -1,0 +1,45 @@
+.catalog-body {
+  @media (max-width: 1023px) {
+    .wares--suggestion {
+      display: block;
+    }
+
+    .wares__title {
+      visibility: hidden;
+    }
+
+    .wares {
+      padding-top: 25px;
+    }
+
+    .wares__title::after {
+      content: "С этим покупают";
+      visibility: visible;
+      padding: 0;
+      display: block;
+      text-align: center;
+      color: #48494d;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 13px;
+    }
+
+    .wares__figcaption {
+      margin: 0;
+      padding-top: 35px;
+    }
+
+    .tabs__panel {
+      margin-bottom: 67px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 35px;
+      padding: 0 16px;
+    }
+  }
+}
