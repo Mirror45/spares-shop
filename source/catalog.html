@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Магазин запчастей">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
-  <title>Интернет магазин Мишка</title>
+  <title>Магазин запчастей</title>
   <link rel="preload" href="fonts/barlow-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/barlow-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
@@ -148,6 +148,66 @@
     </ul>
 
     <h1>Нешипованные шины</h1>
+
+    <section class="top-filters filters filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <div class="top-filters__wrapper">
+        <div class="top-filters__offers">
+          <ul>
+            <li>
+              <a href="#">Полноприводные</a>
+            </li>
+            <li>
+              <a href="#">от 5000</a>
+            </li>
+            <li>
+              <a href="#">Nokian</a>
+            </li>
+            <li>
+              <a href="#">от 5000</a>
+            </li>
+            <li>
+              <a href="#">еще</a>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__select-wrapper top-filters__city">
+          <div class="custom-select custom-select__city">
+            <button class="custom-select__title filters__sorting-select" type="button">Набережные Челны</button>
+            <input type="hidden" name="modification">
+            <ul>
+              <li data-value="Набережные Челны">Набережные Челны</li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-filters__sorting">
+          <div class="top-filters__sorting-type">
+            <div class="filter__select-wrapper filter__select-wrapper--popular">
+              <div class="custom-select" id="popular-select">
+                <button class="custom-select__title filters__sorting-select" type="button">По популярности</button>
+                <input type="hidden" name="popular">
+                <ul>
+                  <li data-value="По популярности">По популярности</li>
+                </ul>
+              </div>
+            </div>
+            <button class="top-filters__sorting-button" type="button">По популярности</button>
+          </div>
+
+          <div class="top-filters__sorting-view">
+            <button type="button" name="button" class="top-filters__sorting-tile"><span class="visually-hidden">показать
+                плиткой</span></button>
+            <button type="button" name="button" class="top-filters__sorting-simple"><span
+                class="visually-hidden">показать списком</span></button>
+          </div>
+
+          <div class="top-filters__sorting-mobile">
+            <button type="button">Фильтры</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
