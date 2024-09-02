@@ -1,0 +1,19 @@
+.filter__select-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  border-bottom: 1px solid #e0e0e0;
+
+  .filters__sorting-select {
+    border: 1.5px solid #d7d9df;
+    padding: 8px 46px 7px 20px;
+  }
+
+  .left-filter__question{
+    &::before {
+      top: -12px;
+      left: 0;
+    }
+  }
+}

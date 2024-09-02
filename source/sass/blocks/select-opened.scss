@@ -1,0 +1,7 @@
+.select-opened {
+  .custom-select__title {
+    &::after {
+      background-image: url("../img/arrow-grey-top.svg");
+    }
+  }
+}
