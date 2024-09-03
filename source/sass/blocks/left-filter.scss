@@ -1,5 +1,15 @@
 .left-filters__wrapper {
   display: flex;
+
+  @media (max-width: 1023px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .left-filters {
@@ -24,11 +34,81 @@
     line-height: 17px;
     color: #000000;
   }
+
+  .left-filter__checkbox-fieldset {
+    margin-bottom: 28px;
+
+    ul {
+      padding-right: 20px;
+    }
+  }
+
+  .left-filter__model label {
+    max-width: 85px;
+  }
+
+  .left-filter__stock li {
+    min-width: initial;
+    padding-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .left-filter__country-fieldset {
+    margin-bottom: 22px;
+
+    li {
+      padding-left: 27px;
+      min-width: 117px;
+    }
+  }
+
+  button {
+    outline: 0;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  input[type=text] {
+    outline: 0;
+    background-color: none;
+    border-radius: 0;
+
+    &:hover {
+      border-color: rgba(224, 224, 224, 0.6);
+    }
+
+    &:active,
+    &:focus {
+      border-color: silver;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+    width: 100%;
+
+    .left-filters,
+    .left-filters label {
+      max-width: 100%;
+    }
+  }
 }
 
 .left-filter__options {
   padding-right: 20px;
   box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .left-filter__type {
@@ -67,6 +147,12 @@
     right: 0;
     height: 3px;
     background-color: #ff7931;
+  }
+
+  @media (max-width: 767px) {
+    .left-filter__active-type::before {
+      display: none;
+    }
   }
 }
 
@@ -132,6 +218,29 @@
     &:nth-child(2n) {
       margin-bottom: 0;
       padding-left: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .left-filter__submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 252px;
+  }
+
+  @media (max-width: 767px) {
+    .left-filter__form li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2n) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -288,3 +397,134 @@
   margin-bottom: -3px;
 }
 
+.left-filter__brand .left-filter__legend {
+  padding-bottom: 10px;
+}
+
+.left-filter__input--brand,
+.left-filter__input--model {
+  font: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bdbec2;
+  padding: 8px 107px 7px 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 22px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    color: #bdbec2;
+  }
+}
+
+.left-filter__model .left-filter__legend {
+  padding-bottom: 10px;
+}
+
+.left-filter__show-more {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 121, 49, 0.2);
+  font-size: 14px;
+  line-height: 17px;
+  color: #ff7931;
+}
+
+.left-filter__technology-wrapper {
+  display: flex;
+}
+
+.left-filter__technology {
+  .left-filter__legend {
+    padding-bottom: 16px;
+    padding-left: 0;
+  }
+
+  li {
+    min-width: 118px;
+    padding-left: 29px;
+  }
+
+  .left-filter__question::before {
+    top: 0;
+    left: 0;
+  }
+}
+
+.left-filter__stock ul,
+.left-filter__technology li,
+.left-filter__technology ul {
+  justify-content: flex-start;
+}
+
+.left-filter__stock .left-filter__legend {
+  padding-left: 0;
+  padding-bottom: 12px;
+}
+
+.left-filter__stock input + label {
+  max-width: initial;
+  padding: 6px 16px;
+  background-color: #f0f0f4;
+  color: #bdbec2;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: .07em;
+  cursor: pointer;
+}
+
+.left-filter__stock input:checked + label {
+  background: linear-gradient(92.77deg, #9710e9 1.17%, #fd8d43 99.31%);
+  color: #ffffff;
+}
+
+.left-filter__submit-button {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #bdbec2;
+  padding: 17px 74px;
+  border: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f4;
+}
+
+.left-filter__extra,
+.left-filter__reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.left-filter__extra {
+  position: relative;
+  color: #6f6f6f;
+  margin: 0 auto 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background-image: url("../img/arrow-grey-bottom.svg");
+    text-align: center;
+    top: 5px;
+    right: -25px;
+  }
+}
+
+.left-filter__reset {
+  text-decoration-line: underline;
+  color: #bdbec2;
+  margin: 0 auto;
+}

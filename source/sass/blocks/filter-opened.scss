@@ -1,0 +1,19 @@
+.filter-opened {
+  @media (max-width: 767px) {
+    .left-filters {
+      display: block;
+    }
+
+    .page-catalog {
+      margin: 0;
+    }
+
+    .catalog,
+    .page-catalog>:not(.left-filters__wrapper),
+    .page-footer,
+    .page-header,
+    .wares {
+      display: none;
+    }
+  }
+}

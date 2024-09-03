@@ -25,6 +25,13 @@
     right: 0;
     background-image: url("../img/arrow-grey-bottom.svg");
   }
+
+  @media (max-width: 767px) {
+    &::after {
+      top: 15px;
+      right: 20px;
+    }
+  }
 }
 
 .custom-select {
@@ -79,5 +86,11 @@
 
   .selected {
     color: #48494d;
+  }
+
+  @media (max-width: 767px) {
+    li:nth-child(2n) {
+      margin-bottom: 0;
+    }
   }
 }

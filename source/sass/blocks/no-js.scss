@@ -28,3 +28,9 @@
     padding-top: 25px;
   }
 }
+
+.no-js .left-filters {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
