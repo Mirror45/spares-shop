@@ -1,6 +1,11 @@
 .catalog__pagination {
   margin-bottom: 100px;
   margin-left: 15px;
+
+  @media (max-width: 767px) {
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
 }
 
 .catalog__pagination-list {
@@ -10,6 +15,11 @@
   flex-wrap: wrap;
   width: 335px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .catalog__pagination-item {
@@ -35,6 +45,13 @@
     text-decoration: none;
     color: #a8a8a8;
   }
+
+  @media (max-width: 767px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
 }
 
 .catalog__pagination-item--current {
@@ -53,6 +70,10 @@
   a {
     cursor: default;
     color: #ff7931;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0;
   }
 }
 
