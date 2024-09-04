@@ -308,11 +308,12 @@
     height: 8px;
     top: 6px;
     left: 0;
+    background-image: url("../img/arrow-grey-top.svg");
   }
-}
 
-.left-filter__accordion-close.accordion-close-button::before {
-  background-image: url("../img/arrow-grey-bottom.svg");
+  &.accordion-close-button::before {
+    background-image: url("../img/arrow-grey-bottom.svg");
+  }
 }
 
 .left-filter__form {
