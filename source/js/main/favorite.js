@@ -2,8 +2,8 @@ const favorite = () => {
   const favBtns = document.querySelectorAll('.favorite');
 
   if (favBtns.length) {
-    favBtns.forEach(function (favBtn) {
-      favBtn.addEventListener('click', function (evt) {
+    favBtns.forEach((favBtn) => {
+      favBtn.addEventListener('click', (evt) => {
         evt.preventDefault();
         evt.target.classList.toggle('favorite--active');
       });

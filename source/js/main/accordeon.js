@@ -7,14 +7,14 @@ const accordeon = () => {
     if (section.classList.contains('page-footer__accordeon--opened')) {
       section.classList.remove('page-footer__accordeon--opened');
     } else {
-      pageFooterSections.forEach(function (pageFooterSection) {
+      pageFooterSections.forEach((pageFooterSection) => {
         pageFooterSection.classList.remove('page-footer__accordeon--opened');
       });
       section.classList.add('page-footer__accordeon--opened');
     }
   }
 
-  footerToggles.forEach(function (footerToggle) {
+  footerToggles.forEach((footerToggle) => {
     footerToggle.addEventListener('click', onToggleClicked);
   });
 }

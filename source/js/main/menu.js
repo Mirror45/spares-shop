@@ -5,7 +5,7 @@ const menu = () => {
   document.body.classList.remove('no-js');
 
   if (menuToggle) {
-    menuToggle.addEventListener('click', function (evt) {
+    menuToggle.addEventListener('click', (evt) => {
       if (menu) {
         evt.currentTarget.classList.toggle('page-header__menu-toggle--active');
         document.body.classList.toggle('menu-opened');
@@ -16,7 +16,7 @@ const menu = () => {
   const navList = document.querySelector('.nav__list');
 
   if (navList) {
-    navList.addEventListener('click', function (evt) {
+    navList.addEventListener('click', (evt) => {
       const curTarget = evt.currentTarget;
       const target = evt.target;
       const activeLink = 'nav__link--active';
