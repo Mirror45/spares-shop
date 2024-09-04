@@ -288,6 +288,267 @@
       <p>Любой сложности и без очередей</p>
     </section>
 
+    <div class="info tabs">
+      <div class="info__container">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <a class="tabs__link" href="#about">О товаре</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#specs">Характеристики</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#feedback">Отзывы</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link tabs__link--active" href="#self-delivery">Самовывоз</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#delivery">Доставка</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#service">Услуги</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#business">Бизнесу</a>
+          </li>
+        </ul>
+
+        <section class="info__section tabs__panel" id="about">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#about">О товаре</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel" id="specs">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#specs">Характеристики</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel" id="feedback">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#feedback">Отзывы</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel tabs__panel--active" id="self-delivery">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link tabs__link--active" href="#self-delivery">Самовывоз</a>
+          </h2>
+          <div class="info__section-wrap">
+            <div class="info__form">
+              <form method="POST" action="#">
+                <div class="info__search-set">
+                  <label class="info__label-search" for="shop-search">Магазин</label>
+                  <div class="info__shop-search">
+                    <div class="search-input">
+                      <input type="search" name="shop-search" id="shop-search" placeholder="Введите название магазина"
+                        required="">
+                    </div>
+                    <button class="button" type="submit">
+                      <span class="visually-hidden">Введите название магазина</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="info__radios">
+                  <div class="info__radio-wrap">
+                    <input type="radio" name="take-time" id="take-time-td">
+                    <label class="info__label-radio" for="take-time-td">
+                      Забрать сегодня
+                    </label>
+                  </div>
+                  <div class="info__radio-wrap">
+                    <input type="radio" name="take-time" id="take-time-tm" checked="">
+                    <label class="info__label-radio" for="take-time-tm">
+                      Забрать завтра и позднее
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="info__table-wrap">
+              <table class="info__table">
+                <thead class="info__table-head">
+                  <tr>
+                    <th class="info__table-th info__table-th--address">Адрес</th>
+                    <th class="info__table-th info__table-th--regime">Режим работы</th>
+                    <th class="info__table-th info__table-th--amount">Доступно</th>
+                    <th class="info__table-th">Количество</th>
+                    <th class="info__table-th"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="info__table-row">
+                    <td class="info__table-cell">
+                      Санкт-Петербург, ул <br> Большая Конюшенная, д 19
+                    </td>
+                    <td class="info__table-cell info__table-cell--regime">
+                      <div class="info__table-cell-title">Режим работы</div>
+                      <table class="info__table-inner">
+                        <tr>
+                          <td>пн-сб:</td>
+                          <td>08:00-19:00</td>
+                        </tr>
+                        <tr>
+                          <td>вс:</td>
+                          <td>09:00-17:00</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Доступно</div>
+                      Завтра и позднее
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Количество</div>
+                      Мало
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-descr">
+                        Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                      </div>
+                      <a class="button" href="#">Купить</a>
+                    </td>
+                  </tr>
+
+                  <tr class="info__table-row">
+                    <td class="info__table-cell">
+                      Санкт-Петербург, ул <br> Большая Конюшенная, д 19
+                    </td>
+                    <td class="info__table-cell info__table-cell--regime">
+                      <div class="info__table-cell-title">Режим работы</div>
+                      <table class="info__table-inner">
+                        <tr>
+                          <td>пн-сб:</td>
+                          <td>08:00-19:00</td>
+                        </tr>
+                        <tr>
+                          <td>вс:</td>
+                          <td>09:00-17:00</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Доступно</div>
+                      Завтра и позднее
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Количество</div>
+                      Много
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-descr">
+                        Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                      </div>
+                      <a class="button" href="#">Купить</a>
+                    </td>
+                  </tr>
+
+                  <tr class="info__table-row">
+                    <td class="info__table-cell">
+                      Санкт-Петербург, ул <br> Большая Конюшенная, д 19
+                    </td>
+                    <td class="info__table-cell info__table-cell--regime">
+                      <div class="info__table-cell-title">Режим работы</div>
+                      <table class="info__table-inner">
+                        <tr>
+                          <td>пн-сб:</td>
+                          <td>08:00-19:00</td>
+                        </tr>
+                        <tr>
+                          <td>вс:</td>
+                          <td>09:00-17:00</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Доступно</div>
+                      Завтра и позднее
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Количество</div>
+                      Достаточно
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-descr">
+                        Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                      </div>
+                      <a class="button" href="#">Купить</a>
+                    </td>
+                  </tr>
+                  <tr class="info__table-row">
+                    <td class="info__table-cell">
+                      Санкт-Петербург, ул <br> Большая Конюшенная, д 19
+                    </td>
+                    <td class="info__table-cell info__table-cell--regime">
+                      <div class="info__table-cell-title">Режим работы</div>
+                      <table class="info__table-inner">
+                        <tr>
+                          <td>пн-сб:</td>
+                          <td>08:00-19:00</td>
+                        </tr>
+                        <tr>
+                          <td>вс:</td>
+                          <td>09:00-17:00</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Доступно</div>
+                      Завтра и позднее
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-title">Количество</div>
+                      Мало
+                    </td>
+                    <td class="info__table-cell">
+                      <div class="info__table-cell-descr">
+                        Нажимая на эту кнопку вы сможете забрать товар вне очереди
+                      </div>
+                      <a class="button" href="#">Купить</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="info__table-link" href="#">Показать все автосалоны</a>
+            </div> <!-- end of .info__table-wrap -->
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel" id="delivery">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#delivery">Доставка</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel" id="service">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#service">Услуги</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+        <section class="info__section tabs__panel" id="business">
+          <h2 class="info__section-title">
+            <a class="info__section-link tabs__link" href="#business">Бизнесу</a>
+          </h2>
+          <div class="info__section-wrap">
+          </div>
+        </section>
+
+      </div>
+    </div>
+
     <section class="wares wares--suggestion">
       <div class="wares__container tabs">
         <h2 class="wares__title">
