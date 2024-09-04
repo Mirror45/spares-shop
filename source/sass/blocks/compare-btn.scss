@@ -1,0 +1,25 @@
+.compare-btn {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-image: url("../img/bars.svg");
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.compare-btn--active {
+  background-image: url("../img/bars-active.svg");
+}
