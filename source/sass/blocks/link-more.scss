@@ -1,0 +1,23 @@
+.link-more {
+  text-decoration: none;
+  display: inline-block;
+  width: 252px;
+  padding: 17px 10px 14px;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .9px;
+  color: #bdbec2;
+  background-color: #f0f0f4;
+
+  &:hover {
+    opacity: 0.6;
+    color: #000000;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

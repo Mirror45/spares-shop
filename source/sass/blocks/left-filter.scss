@@ -1,131 +1,9 @@
 .left-filters__wrapper {
   display: flex;
 
-  .wares__list {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 43px 10px;
-  }
-
-  .wares__item {
-    position: relative;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 1px solid #cdcdcd;
-    border-radius: 3px;
-    margin-right: 3.5%;
-    margin-bottom: 27px;
-    width: 31%;
-    box-sizing: border-box;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
-
-  .wares__figcaption {
-    padding-top: 14px;
-  }
-
-  .wares__item--presence .wares__figcaption {
-    padding-top: 32px;
-  }
-
-  .wares__presence-text {
-    padding-bottom: 10px;
-  }
-
-  .wares__show-more {
-    display: none;
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-
-  .wares__show-button {
-    border: 0;
-    background-color: #f0f0f4;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: #bdbec2;
-    width: 100%;
-    padding: 17px 0 14px;
-  }
-
-  @media (max-width:1110px) {
-    .wares__list {
-      margin-left: 0;
-    }
-
-    .wares__item {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-  }
-
-  @media (max-width: 1023px) {
-    padding: 0 20px;
-
-    .wares__item {
-      width: 48%;
-      margin-right: 4%;
-    }
-
-    .wares__item:nth-child(3n) {
-      margin-right: 4%;
-    }
-
-    .wares__item:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-
   @media (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-
-    .wares__list {
-      margin-bottom: 2px;
-    }
-
-    .wares__item {
-      margin-bottom: 31px;
-    }
-
-    .wares__item--hidden {
-      display: none;
-    }
-
-    .wares__item {
-      width: 100%;
-      margin-right: 0;
-      padding-left: 18px;
-      padding-right: 18px;
-    }
-
-    .wares__item:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    .wares__item--presence .wares__figcaption {
-      padding-top: 29px;
-    }
-
-    .wares__item--presence .wares__price {
-      padding-top: 22px;
-      padding-bottom: 26px;
-    }
-
-    .wares__show-more {
-      display: block;
-      margin-bottom: 50px;
-    }
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -223,7 +101,7 @@
   padding-right: 20px;
   box-sizing: border-box;
 
-  @media (max-width: 767px) {
+  @media (max-width: 890px) {
     display: none;
   }
 }

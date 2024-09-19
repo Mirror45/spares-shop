@@ -8,6 +8,7 @@
   <title>Интернет-магазин Автозапчастей: Главная</title>
   <link rel="preload" href="fonts/barlow-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/barlow-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -142,168 +143,175 @@
     <section class="notice">
       <h2 class="notice__header visually-hidden">Анонс товаров</h2>
       <div class="notice__container">
-        <div class="notice__slider slider">
-          <div class="slider__slide">
-            <div class="slider__content"></div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__content"></div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__content"></div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__content"></div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__content"></div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__content"></div>
+        <div class="notice__slider">
+          <div class="swiper swiper--promo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--promo">
+                <img src="img/big-slider-image@1x.jpg" width="870" height="397" alt="Slide promo-1">
+              </div>
+              <div class="swiper-slide swiper-slide--promo">
+                <img src="img/big-slider-image@1x.jpg" width="870" height="397" alt="Slide promo-2">
+              </div>
+              <div class="swiper-slide swiper-slide--promo">
+                <img src="img/big-slider-image@1x.jpg" width="870" height="397" alt="Slide promo-3">
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-slider__pagination--promo"></div>
+            <div class="swiper-slider__button-prev swiper-slider__button-prev--promo"></div>
+            <div class="swiper-slider__button-next swiper-slider__button-next--promo"></div>
           </div>
         </div>
-        <div class="notice__action slider slider--big-dots">
-          <article class="action">
-            <h3 class="action__title visually-hidden">
-              Акция!
-            </h3>
-            <div class="action__price">
-              <div class="action__price-new">
-                200
-              </div>
-              <div class="action__price-old">
-                500
-              </div>
+        <div class="notice__action swiper swiper--action">
+          <div class="swiper-wrapper swiper-slider__container--action">
+            <div class="swiper-slide">
+              <article class="action">
+                <h3 class="action__title visually-hidden">
+                  Акция!
+                </h3>
+                <div class="action__price">
+                  <div class="action__price-new">
+                    200
+                  </div>
+                  <div class="action__price-old">
+                    500
+                  </div>
+                </div>
+                <figure class="action__fig">
+                  <picture>
+                    <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
+                    <!-- 1х: 232px; 2x: 464px -->
+                    <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                  </picture>
+                  <figcaption class="action__figcaption">
+                    Лампочка mini...
+                  </figcaption>
+                </figure>
+                <div class="action__footer">
+                  <div class="action__footer-caption">
+                    До конца акции осталось:
+                  </div>
+                  <div class="action__countdown countdown">
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">часов</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">20</div>
+                      <div class="countdown__caption">минут</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">секунд</div>
+                    </div>
+                  </div>
+                </div>
+                <a class="action__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </article>
             </div>
-            <figure class="action__fig">
-              <picture>
-                <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
-                <!-- 1х: 232px; 2x: 464px -->
-                <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
-              </picture>
-              <figcaption class="action__figcaption">
-                Лампочка mini...
-              </figcaption>
-            </figure>
-            <div class="action__footer">
-              <div class="action__footer-caption">
-                До конца акции осталось:
-              </div>
-              <div class="action__countdown countdown">
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">часов</div>
+            <div class="swiper-slide">
+              <article class="action">
+                <h3 class="action__title visually-hidden">
+                  Акция!
+                </h3>
+                <div class="action__price">
+                  <div class="action__price-new">
+                    200
+                  </div>
+                  <div class="action__price-old">
+                    500
+                  </div>
                 </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">20</div>
-                  <div class="countdown__caption">минут</div>
+                <figure class="action__fig">
+                  <picture>
+                    <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
+                    <!-- 1х: 232px; 2x: 464px -->
+                    <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                  </picture>
+                  <figcaption class="action__figcaption">
+                    Лампочка mini...
+                  </figcaption>
+                </figure>
+                <div class="action__footer">
+                  <div class="action__footer-caption">
+                    До конца акции осталось:
+                  </div>
+                  <div class="action__countdown countdown">
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">часов</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">20</div>
+                      <div class="countdown__caption">минут</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">секунд</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">секунд</div>
-                </div>
-              </div>
+                <a class="action__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </article>
             </div>
-            <a class="action__link" href="#">
-              <span class="visually-hidden">
-                Перейти на страницу товара
-              </span>
-            </a>
-          </article>
-          <article class="action">
-            <h3 class="action__title visually-hidden">
-              Акция!
-            </h3>
-            <div class="action__price">
-              <div class="action__price-new">
-                200
-              </div>
-              <div class="action__price-old">
-                500
-              </div>
+            <div class="swiper-slide">
+              <article class="action">
+                <h3 class="action__title visually-hidden">
+                  Акция!
+                </h3>
+                <div class="action__price">
+                  <div class="action__price-new">
+                    200
+                  </div>
+                  <div class="action__price-old">
+                    500
+                  </div>
+                </div>
+                <figure class="action__fig">
+                  <picture>
+                    <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
+                    <!-- 1х: 232px; 2x: 464px -->
+                    <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                  </picture>
+                  <figcaption class="action__figcaption">
+                    Лампочка mini...
+                  </figcaption>
+                </figure>
+                <div class="action__footer">
+                  <div class="action__footer-caption">
+                    До конца акции осталось:
+                  </div>
+                  <div class="action__countdown countdown">
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">часов</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">20</div>
+                      <div class="countdown__caption">минут</div>
+                    </div>
+                    <div class="countdown__dial">
+                      <div class="countdown__numbers">00</div>
+                      <div class="countdown__caption">секунд</div>
+                    </div>
+                  </div>
+                </div>
+                <a class="action__link" href="#">
+                  <span class="visually-hidden">
+                    Перейти на страницу товара
+                  </span>
+                </a>
+              </article>
             </div>
-            <figure class="action__fig">
-              <picture>
-                <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
-                <!-- 1х: 232px; 2x: 464px -->
-                <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
-              </picture>
-              <figcaption class="action__figcaption">
-                Лампочка mini...
-              </figcaption>
-            </figure>
-            <div class="action__footer">
-              <div class="action__footer-caption">
-                До конца акции осталось:
-              </div>
-              <div class="action__countdown countdown">
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">часов</div>
-                </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">20</div>
-                  <div class="countdown__caption">минут</div>
-                </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">секунд</div>
-                </div>
-              </div>
-            </div>
-            <a class="action__link" href="#">
-              <span class="visually-hidden">
-                Перейти на страницу товара
-              </span>
-            </a>
-          </article>
-          <article class="action">
-            <h3 class="action__title visually-hidden">
-              Акция!
-            </h3>
-            <div class="action__price">
-              <div class="action__price-new">
-                200
-              </div>
-              <div class="action__price-old">
-                500
-              </div>
-            </div>
-            <figure class="action__fig">
-              <picture>
-                <source type="image/webp" srcset="img/lamp@1x.webp 1x, img/lamp@2x.webp 2x">
-                <!-- 1х: 232px; 2x: 464px -->
-                <img src="img/lamp@1x.jpg" srcset="img/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
-              </picture>
-              <figcaption class="action__figcaption">
-                Лампочка mini...
-              </figcaption>
-            </figure>
-            <div class="action__footer">
-              <div class="action__footer-caption">
-                До конца акции осталось:
-              </div>
-              <div class="action__countdown countdown">
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">часов</div>
-                </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">20</div>
-                  <div class="countdown__caption">минут</div>
-                </div>
-                <div class="countdown__dial">
-                  <div class="countdown__numbers">00</div>
-                  <div class="countdown__caption">секунд</div>
-                </div>
-              </div>
-            </div>
-            <a class="action__link" href="#">
-              <span class="visually-hidden">
-                Перейти на страницу товара
-              </span>
-            </a>
-          </article>
+          </div>
+          <div class="swiper-slider__pagination swiper-slider__pagination--action"></div>
         </div>
       </div>
     </section>
@@ -474,249 +482,220 @@
 
         <section class="tabs__panel tabs__panel--active" id="wares-spares">
           <h3 class="visually-hidden">Запчасти</h3>
-          <div class="wares__list slider slider--big-dots">
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/belt@1x.webp 1x, img/belt@2x.webp 2x">
-                  <!-- 1х: 230px; 2x: 460px -->
-                  <img src="img/belt@1x.jpg" srcset="img/belt@2x.jpg 2x" width="230" height="215"
-                    alt="Ремень с застёжкой">
-                </picture>
-                <figcaption class="wares__figcaption">Ремень</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">440 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
+          <div class="swiper-slider swiper-slider--popular">
+            <div class="swiper-slider__container swiper-slider__container--popular">
+              <div class="swiper swiper--popular">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--popular card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                </div>
 
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__winter" aria-hidden="true"></span>
+                <div class="swiper-slider__pagination swiper-slider__pagination--popular"></div>
               </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-1@1x.webp 1x, img/tire-1@2x.webp 2x">
-                  <!-- 1х: 126px; 2x: 252px -->
-                  <img src="img/tire-1@1x.jpg" srcset="img/tire-1@2x.jpg 2x" width="126" height="181"
-                    alt="Автомобильное колесо с шипами">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
+              <div class="swiper-slider__button-prev swiper-slider__button-prev--popular"></div>
+              <div class="swiper-slider__button-next swiper-slider__button-next--popular"></div>
+              <div class="swiper-slider__footer">
+                <a class="link-more" href="#">Смотреть еще</a>
+              </div>
             </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/headlight@1x.webp 1x, img/headlight@2x.webp 2x">
-                  <!-- 1х: 232px; 2x: 464px -->
-                  <img src="img/headlight@1x.jpg" srcset="img/headlight@2x.jpg 2x" width="232" height="174"
-                    alt="Автомобильная фара">
-                </picture>
-                <figcaption class="wares__figcaption">Фара Nokian 2025</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо без шипов">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 245/60 R18 105T Contyther Crosh Conta...</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
-              </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/belt@1x.webp 1x, img/belt@2x.webp 2x">
-                  <!-- 1х: 230px; 2x: 460px -->
-                  <img src="img/belt@1x.jpg" srcset="img/belt@2x.jpg 2x" width="230" height="215"
-                    alt="Ремень с застёжкой">
-                </picture>
-                <figcaption class="wares__figcaption">Ремень</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">440 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__winter" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-1@1x.webp 1x, img/tire-1@2x.webp 2x">
-                  <!-- 1х: 126px; 2x: 252px -->
-                  <img src="img/tire-1@1x.jpg" srcset="img/tire-1@2x.jpg 2x" width="126" height="181"
-                    alt="Автомобильное колесо с шипами">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/headlight@1x.webp 1x, img/headlight@2x.webp 2x">
-                  <!-- 1х: 232px; 2x: 464px -->
-                  <img src="img/headlight@1x.jpg" srcset="img/headlight@2x.jpg 2x" width="232" height="174"
-                    alt="Автомобильная фара">
-                </picture>
-                <figcaption class="wares__figcaption">Фара Nokian 2025</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо без шипов">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 245/60 R18 105T Contyther Crosh Conta...</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
-              </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="wares__footer">
-            <a class="wares__link-more" href="#">Смотреть еще</a>
           </div>
         </section>
 
@@ -739,12 +718,6 @@
           <h3 class="visually-hidden">Инструменты</h3>
 
         </section>
-
-        <section class="tabs__panel" id="wares-accessories">
-          <h3 class="visually-hidden">Аксессуары и другое</h3>
-
-        </section>
-
       </div>
     </section>
 
@@ -786,257 +759,221 @@
 
         <section class="tabs__panel tabs__panel--active" id="wares-sug-spares">
           <h3 class="visually-hidden">Запчасти</h3>
-          <div class="wares__list slider slider--big-dots">
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
-              </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
+          <div class="swiper-slider swiper-slider--suggestion">
+            <div class="swiper-slider__container swiper-slider__container--suggestion">
+              <div class="swiper swiper--suggestion">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slider__slide--suggestion card-product card-product__item--sale">
+                    <div class="card-product__attributes">
+                      <button class="favorite" title="Добавить в избранное" type="button">
+                        <span class="visually-hidden">Добавить в избранное</span>
+                      </button>
+                      <span class="card-product__summer" aria-hidden="true"></span>
+                    </div>
+                    <a class="card-product__overlay" href="product-page.html">быстрый просмотр</a>
+                    <figure class="card-product__fig">
+                      <picture>
+                        <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
+                        <!-- 1х: 151px; 2x: 302px -->
+                        <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
+                          alt="Автомобильное колесо">
+                      </picture>
+                      <figcaption class="card-product__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
+                    </figure>
+                    <div class="card-product__presence card-product__presence--none">
+                      <div class="card-product__presence-text">Нет в наличии</div>
+                      <a class="card-product__presence-link" href="#">Сообщить о поступлении</a>
+                    </div>
+                    <a class="card-product__link" href="#">
+                      <span class="visually-hidden">Перейти на страницу товара</span>
+                    </a>
+                  </div>
+                </div>
 
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__winter" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
+                <div class="swiper-slider__pagination swiper-slider__pagination--suggestion"></div>
 
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite favorite--active" title="Убрать из избранного" type="button">
-                  <span class="visually-hidden">
-                    Убрать из избранного
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
               </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
+              <div class="swiper-slider__button-prev swiper-slider__button-prev--suggestion"></div>
+              <div class="swiper-slider__button-next swiper-slider__button-next--suggestion"></div>
+              <div class="swiper-slider__footer">
+                <a class="link-more" href="#">Смотреть еще</a>
               </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
             </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 245/60 R18 105T Contyther Crosh Conta...</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
-              </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__winter" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item wares__item--sale">
-              <div class="wares__attributes">
-                <button class="favorite favorite--active" title="Убрать из избранного" type="button">
-                  <span class="visually-hidden">
-                    Убрать из избранного
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 205/80 R16 104Q Misha RF Power Grum</figcaption>
-              </figure>
-              <div class="wares__presence wares__presence--none">
-                <div class="wares__presence-text">Нет в наличии</div>
-                <a class="wares__presence-link" href="#">Сообщить о поступлении</a>
-              </div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-
-            <div class="wares__item">
-              <div class="wares__attributes">
-                <button class="favorite" title="Добавить в избранное" type="button">
-                  <span class="visually-hidden">
-                    Добавить в избранное
-                  </span>
-                </button>
-                <span class="wares__summer" aria-hidden="true"></span>
-              </div>
-              <a class="wares__overlay" href="#">
-                быстрый просмотр
-              </a>
-              <figure class="wares__fig">
-                <picture>
-                  <source type="image/webp" srcset="img/tire-2@1x.webp 1x, img/tire-2@2x.webp 2x">
-                  <!-- 1х: 151px; 2x: 302px -->
-                  <img src="img/tire-2@1x.jpg" srcset="img/tire-2@2x.jpg 2x" width="151" height="181"
-                    alt="Автомобильное колесо">
-                </picture>
-                <figcaption class="wares__figcaption">Шина 245/60 R18 105T Contyther Crosh Conta...</figcaption>
-              </figure>
-              <div class="wares__presence" aria-hidden="true"></div>
-              <div class="wares__price">11 680 ₽</div>
-              <a class="wares__link" href="product-page.html">
-                <span class="visually-hidden">
-                  Перейти на страницу товара
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="wares__footer">
-            <a class="wares__link-more" href="#">Смотреть еще</a>
           </div>
         </section>
 
@@ -1062,7 +999,6 @@
 
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer">
@@ -1169,6 +1105,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js" type="module"></script>
 </body>
 
