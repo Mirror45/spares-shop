@@ -1,0 +1,1 @@
+const productRating=()=>{const t=document.querySelector(".product__rating");t&&t.addEventListener("click",(r=>{const c=r.target;if(c.classList.contains("product__rating-star")){t.querySelector(".product__rating-star--active").classList.remove("product__rating-star--active"),c.classList.add("product__rating-star--active")}}))};export{productRating};

@@ -1,0 +1,1 @@
+const favorite=()=>{const e=document.querySelectorAll(".favorite");e.length&&e.forEach((e=>{e.addEventListener("click",(e=>{e.preventDefault(),e.target.classList.toggle("favorite--active")}))}))};export{favorite};
