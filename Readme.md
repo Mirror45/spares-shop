@@ -1,64 +1,109 @@
-**Spares-shop - Адаптивный интернет-магазин запчастей для машины**
+# 🚘 Spares-shop — Auto Parts Online Store
 
-* Выполнено три страницы:
+**Spares-shop** is a responsive website for an auto parts e-commerce store. The project includes the core pages of a typical store: homepage, product catalog, and product detail. Built with **HTML**, **Sass**, and **JavaScript (ES6+)**, and powered by **Gulp 4** for task automation and optimization. The responsive layout and modular code structure make the project scalable and maintainable.
 
-  - *Main page
-  
-  - *Catalog page
-  
-  - *Product page
+---
 
-Используемые техники при верстке:
+## 📄 Pages
 
-* HTML - Семантическая вёрстка.
-* Код проверен с помощью сервиса https://validator.w3.org/nu/.
-* Методология БЭМ (HTML, CSS).
+- **Homepage** — promotional banner, product categories, and featured sections.
+- **Catalog Page** — grid of parts, filtering options, and pagination.
+- **Product Page** — image gallery, accordion for details, and quantity selector.
 
-* Раскладка блоков + микросетка на странице сделана с помощью флексбоксов/гридов.
-* Шрифты подключены локально.
+---
 
-* Выполнена адаптивная резиновая вёрстка каждой страницы
-* Использован метод адаптивной верстки Desktop first
+## 🧰 Tech Stack
 
-* Процесс сборки личного проекта настроен с помощью Gulp.
-* CSS-препроцессор Sass.
-* Проверка кода с помощью Stylelint с конфигурацией от HTML Academy.
+### 🔧 Core Technologies
 
-* Выполнена ретинизация растровой графики.
-* Адаптивный логотип.
-* Кадрирование контентных изображений.
+| Technology   | Description |
+|-------------|-------------|
+| **HTML5**    | Semantic markup, validated via [W3C Validator](https://validator.w3.org/nu/). |
+| **Sass (SCSS)** | Modular architecture (`blocks/`, `global/`, `libs/`), variables, mixins. |
+| **JavaScript (ES6+)** | 	Modular, clean code managing UI interactivity: accordions, custom filters with price sliders, tabs, toggles, menus, and product rating components. Implements progressive enhancement to keep core functionality accessible without JS. |
+| **Gulp 4**    | Build automation and optimization pipeline. |
 
-* Js написан с помощью модулей ES6.
-* Использованные библиотеки: Swiper-js.
+### 🛠 Gulp Plugins Used
 
-* Критическая функциональность сайта работоспособна без JavaScript (использовано прогрессивное улучшение).
+| Plugin                | Purpose |
+|-----------------------|---------|
+| `gulp-dart-sass`      | Compile SCSS to CSS. |
+| `gulp-htmlmin`        | Minify HTML. |
+| `gulp-libsquoosh`, `gulp-webp` | Image optimization and WebP generation. |
+| `gulp-autoprefixer`, `gulp-clean-css` | CSS prefixing and minification. |
+| `gulp-svgstore`, `gulp-svgo` | SVG sprite generation and optimization. |
+| `browser-sync`        | Local development server with LiveReload. |
 
-* Вёрстка идентично отображается в последних версиях браузеров Chrome, Opera, Firefox, Safari, Edge.
+---
+
+## 🎯 Implementation Highlights
+
+- **BEM methodology** for CSS class naming.
+- **Responsive design** (Desktop First) using Flexbox and CSS Grid.
+- **Local fonts** connected directly from project files.
+- **Progressive enhancement**: core functionality works without JavaScript.
+- **Retina-ready images** for high-resolution displays.
+- **Swiper.js** used for product image carousels.
+- **Stylelint** and **EditorConfig** ensure consistent code quality and formatting.
+- **Custom modular JavaScript** managing:
+
+  - Footer accordions.
+
+  - Filter panel with price range slider, custom selects, checkboxes, and reset functionality.
+
+  - Responsive hamburger menu toggle and navigation link activation.
+
+  - Interactive product rating stars.
+
+  - Tabs navigation.
+
+---
+
+## 📁 Project Structure
+
+source/
+
+├── sass/              # Styles (SCSS modules: blocks, global, libs)
+
+├── js/                # JavaScript modules (components)
+
+├── img/               # Images and icons
+
+├── fonts/             # Local fonts
+
+├── *.html             # Markup pages
+
+└── manifest.webmanifest
+
+build/                 # Compiled production build
+
+├── css/               # Minified styles
+
+├── js/                # Minified scripts
+
+├── img/               # Optimized images + WebP
+
+├── fonts/             # Fonts copy
+
+└── *.html             # Final production pages
 
 
-## Установка 🛠
+---
 
-1. Сначала требуется склонировать проект на ваш пк
+## 📦 Getting Started
 
+> ⚠️ **Node.js v16** is required.
+
+```bash
+# Clone the repository to your local machine
+git clone https://github.com/your-username/spares-shop.git
+
+# Navigate into the cloned project directory
+cd spares-shop
+
+# Install all dependencies
+npm install
+
+# Start development server with live reload
+npm start
 ```
-  git clone git@github.com:Mirror45/spares-shop.git
-```
-
-2. Переходим в только что склонированный репозиторий
-
-```
- cd spares-shop
-```
-
-3. Устанавливаем все зависимости
-
-```
- npm i
-```
-
-4. Запускаем проект на локальном хосте
-
-```
- npm start
-```
-
