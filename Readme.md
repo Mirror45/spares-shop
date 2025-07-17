@@ -96,7 +96,7 @@ build/                 # Compiled production build
 
 ```bash
 # Clone the repository to your local machine
-git clone https://github.com/your-username/spares-shop.git
+git clone https://github.com/Mirror45/spares-shop.git
 
 # Navigate into the cloned project directory
 cd spares-shop
