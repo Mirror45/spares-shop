@@ -217,62 +217,59 @@
           <div class="left-filter__options">
             <div class="left-filter__type">
               <button type="button" name="button"
-                class="left-filter__type-filter left-filter__active-type">Параметры</button>
-              <button type="button" name="button" class="left-filter__type-filter">По марке</button>
+                class="left-filter__type-filter left-filter__active-type">Parameters</button>
+              <button type="button" name="button" class="left-filter__type-filter">By brand</button>
             </div>
             <div class="left-filter__fieldset">
-              <p class="left-filter__legend">Сезонность</p>
+              <p class="left-filter__legend">Seasonality</p>
               <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+                  class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <ul>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
                       type="checkbox" name="winter" id="filter-winter">
-                    <label for="filter-winter">Зимние</label>
-                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                        вопрос</span></button>
+                    <label for="filter-winter">Winter</label>
+                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
                       type="checkbox" name="summer" id="filter-summer">
-                    <label for="filter-summer">Летние</label>
+                    <label for="filter-summer">Summer</label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="left-filter__fieldset">
-              <p class="left-filter__legend">Тип шин</p>
-              <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+              <p class="left-filter__legend">Tire type</p>
+              <button type="button" name="button" class="left-filter__accordion-close">
+                <span class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <ul>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
                       type="checkbox" name="all-tires" id="filter-all-tires" checked="">
-                    <label for="filter-all-tires">Все</label>
+                    <label for="filter-all-tires">All</label>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
                       type="checkbox" name="studded" id="filter-studded">
-                    <label for="filter-studded">Шипованные</label>
-                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                        вопрос</span></button>
+                    <label for="filter-studded">Studded</label>
+                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--box"
                       type="checkbox" name="studless" id="filter-studless">
-                    <label for="filter-studless">Нешипованные</label>
-                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                        вопрос</span></button>
+                    <label for="filter-studless">Non-studded</label>
+                    <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="left-filter__fieldset left-filter__price left-filter__price--fieldset">
-              <p class="left-filter__legend">Цена</p>
+              <p class="left-filter__legend">Price</p>
               <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+                  class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <div class="left-filter__range-controls">
                   <div class="left-filter__scale">
@@ -283,11 +280,11 @@
                 </div>
                 <div class="left-filter__price-controls">
                   <div class="left-filter__row left-filter__row--input left-filter__min-price">
-                    <label for="min-price-mask">от</label>
+                    <label for="min-price-mask">from</label>
                     <input type="text" name="min-price" value="2000" pattern="^[ 0-9]+$" id="min-price-mask">
                   </div>
                   <div class="left-filter__row left-filter__row--input left-filter__max-price">
-                    <label for="max-price-mask">до</label>
+                    <label for="max-price-mask">to</label>
                     <input type="text" name="max-price" value="12000" pattern="^[ 0-9]+$" id="max-price-mask">
                   </div>
                 </div>
@@ -295,9 +292,8 @@
             </div>
             <div class="filter left-filter__fieldset left-filter__select-fieldset left-filter__diameter-fieldset">
               <div class="filter__select-wrapper">
-                <p class="left-filter__legend">Диаметр</p>
-                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                    вопрос</span></button>
+                <p class="left-filter__legend">Diameter</p>
+                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                 <div class="custom-select" id="diameter-select">
                   <button class="custom-select__title" type="button">16</button>
                   <input type="hidden" name="diameter">
@@ -329,12 +325,10 @@
             </div>
             <div class="filter left-filter__fieldset left-filter__select-fieldset">
               <div class="filter__select-wrapper">
-                <p class="left-filter__legend">Профиль</p>
-                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                    вопрос</span></button>
+                <p class="left-filter__legend">Profile</p>
+                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                 <div class="custom-select" id="profile-select">
-                  <button class="custom-select__title" type="button"><span class="visually-hidden">выбрать
-                      профиль</span></button>
+                  <button class="custom-select__title" type="button"><span class="visually-hidden">select profile</span></button>
                   <input type="hidden" name="profile">
                   <ul></ul>
                 </div>
@@ -342,12 +336,10 @@
             </div>
             <div class="filter left-filter__fieldset left-filter__select-fieldset">
               <div class="filter__select-wrapper">
-                <p class="left-filter__legend">Ширина</p>
-                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                    вопрос</span></button>
+                <p class="left-filter__legend">Width</p>
+                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
                 <div class="custom-select" id="width-select">
-                  <button class="custom-select__title" type="button"><span class="visually-hidden">выбрать
-                      ширину</span></button>
+                  <button class="custom-select__title" type="button"><span class="visually-hidden">select width</span></button>
                   <input type="hidden" name="width">
                   <ul></ul>
                 </div>
@@ -357,10 +349,10 @@
             <div class="left-filter__fieldset left-filter__checkbox-fieldset left-filter__brand">
               <p class="left-filter__legend">Бренд</p>
               <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+                  class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <input id="brand-input" type="text" class="left-filter__input left-filter__input--brand"
-                  placeholder="Введите бренд шины" aria-label="Введите бренд шины">
+                  placeholder="Enter tire brand" aria-label="Enter tire brand">
                 <ul>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
@@ -383,16 +375,16 @@
                     <label for="filter-bfhide">BF hide</label>
                   </li>
                 </ul>
-                <button type="button" name="button" class="left-filter__show-more">Показать еще</button>
+                <button type="button" name="button" class="left-filter__show-more">Show more</button>
               </div>
             </div>
             <div class="left-filter__fieldset left-filter__checkbox-fieldset left-filter__model">
-              <p class="left-filter__legend">Модель</p>
+              <p class="left-filter__legend">Model</p>
               <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+                  class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <input id="model-input" type="text" class="left-filter__input left-filter__input--model"
-                  placeholder="Введите модель шины" aria-label="Введите модель шины">
+                  placeholder="Enter tire model" aria-label="Enter tire model">
                 <ul>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
@@ -415,30 +407,29 @@
                     <label for="filter-icegide">ICE Gide</label>
                   </li>
                 </ul>
-                <button type="button" name="button" class="left-filter__show-more">Показать еще</button>
+                <button type="button" name="button" class="left-filter__show-more">Show more</button>
               </div>
             </div>
             <div class="left-filter__fieldset left-filter__technology">
               <div class="left-filter__technology-wrapper">
-                <p class="left-filter__legend">Технология</p>
-                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                    вопрос</span></button>
+                <p class="left-filter__legend">Technology</p>
+                <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question?</span></button>
               </div>
               <ul>
                 <li class="left-filter__option">
                   <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
                     type="checkbox" id="filter-yes">
-                  <label for="filter-yes">Да</label>
+                  <label for="filter-yes">Yes</label>
                 </li>
                 <li class="left-filter__option">
                   <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
                     type="checkbox" id="filter-not">
-                  <label for="filter-not">Нет</label>
+                  <label for="filter-not">No</label>
                 </li>
               </ul>
             </div>
             <div class="left-filter__fieldset left-filter__stock">
-              <p class="left-filter__legend">Акции</p>
+              <p class="left-filter__legend">Promotions</p>
               <ul>
                 <li class="left-filter__option left-filter__option--sale">
                   <input class="visually-hidden" type="checkbox" id="filter-sale" checked="">
@@ -454,80 +445,76 @@
                 </li>
                 <li class="left-filter__option left-filter__option--present">
                   <input class="visually-hidden" type="checkbox" id="filter-present" checked="">
-                  <label for="filter-present">ПОДАРОК</label>
+                  <label for="filter-present">GIFT</label>
                 </li>
               </ul>
             </div>
             <div class="left-filter__fieldset left-filter__country-fieldset">
-              <p class="left-filter__legend">Страны</p>
+              <p class="left-filter__legend">Countries</p>
               <button type="button" name="button" class="left-filter__accordion-close"><span
-                  class="visually-hidden">закрыть раздел</span></button>
+                  class="visually-hidden">Close section</span></button>
               <div class="left-filter__accordion-wrapper">
                 <ul>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
-                      type="checkbox" id="filter-russia1" checked="">
-                    <label for="filter-russia1">Россия</label>
+                      type="checkbox" id="filter-france" checked="">
+                    <label for="filter-france">France</label>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
-                      type="checkbox" id="filter-germany1" checked="">
-                    <label for="filter-germany1">Германия</label>
+                      type="checkbox" id="filter-germany" checked="">
+                    <label for="filter-germany">Germany</label>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
-                      type="checkbox" id="filter-russia2">
-                    <label for="filter-russia2">Россия</label>
+                      type="checkbox" id="filter-italy">
+                    <label for="filter-italy">Italy</label>
                   </li>
                   <li class="left-filter__option">
                     <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
-                      type="checkbox" id="filter-germany2">
-                    <label for="filter-germany2">Германия</label>
+                      type="checkbox" id="filter-united-kingdom">
+                    <label for="filter-united-kingdom">United Kingdom</label>
                   </li>
                 </ul>
-                <button type="button" name="button" class="left-filter__show-more">Показать еще</button>
+                <button type="button" name="button" class="left-filter__show-more">Show more</button>
               </div>
             </div>
             <div class="left-filter__fieldset left-filter__submit">
-              <button type="submit" class="left-filter__submit-button">Подобрать</button>
-              <button type="button" class="left-filter__extra">Дополнительные параметры</button>
-              <button type="button" class="left-filter__reset">Сбросить фильтр</button>
+              <button type="submit" class="left-filter__submit-button">Apply</button>
+              <button type="button" class="left-filter__extra">Additional options</button>
+              <button type="button" class="left-filter__reset">Reset filter</button>
             </div>
           </div>
 
           <div class="filters left-filter__models form-models">
             <div class="form-models__title">
-              <h2>Фильтры</h2>
-              <button type="button" class="form-models__back"><span class="visually-hidden">закрыть
-                  фильтр</span></button>
+              <h2>Filters</h2>
+              <button type="button" class="form-models__back"><span class="visually-hidden">Close filters</span></button>
             </div>
             <div class="form-models__type">
-              <button type="button" name="button" class="left-filter__type-filter left-filter__option-button">По
-                параметрам</button>
+              <button type="button" name="button" class="left-filter__type-filter left-filter__option-button">By parameters</button>
               <button type="button" name="button"
-                class="left-filter__type-filter left-filter__models-button left-filter__active-type">По марке</button>
+                class="left-filter__type-filter left-filter__models-button left-filter__active-type">By brand</button>
             </div>
             <div class="form-models__fieldset form-models__season">
-              <p class="form-models__legend">Сезонность</p>
+              <p class="form-models__legend">Seasonality</p>
               <ul>
                 <li class="left-filter__option">
-                  <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                      вопрос</span></button>
+                  <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question</span></button>
                   <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
                     type="checkbox" id="summer">
-                  <label for="summer">Летние</label>
+                  <label for="summer">Summer</label>
                 </li>
                 <li class="left-filter__option">
-                  <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">есть
-                      вопрос</span></button>
+                  <button type="button" name="button" class="left-filter__question"><span class="visually-hidden">Have a question</span></button>
                   <input class="visually-hidden left-filter__input left-filter__checkbox left-filter__checkbox--check"
                     type="checkbox" id="winter" checked="">
-                  <label for="winter">Зимние</label>
+                  <label for="winter">Winter</label>
                 </li>
               </ul>
             </div>
             <div class="filter form-models__fieldset">
-              <p class="form-models__legend">Марка</p>
+              <p class="form-models__legend">Brand</p>
               <div class="filter__select-wrapper">
                 <div class="custom-select" id="brand-select">
                   <button class="custom-select__title filters__sorting-select" type="button">BMW</button>
@@ -539,7 +526,7 @@
               </div>
             </div>
             <div class="filter form-models__fieldset">
-              <p class="form-models__legend">Модель</p>
+              <p class="form-models__legend">Model</p>
               <div class="filter__select-wrapper">
                 <div class="custom-select" id="model-select">
                   <button class="custom-select__title filters__sorting-select" type="button">1-series</button>
@@ -551,7 +538,7 @@
               </div>
             </div>
             <div class="filter form-models__fieldset">
-              <p class="form-models__legend">Кузов</p>
+              <p class="form-models__legend">Body type</p>
               <div class="filter__select-wrapper">
 
                 <div class="custom-select" id="car-body-select">
@@ -564,7 +551,7 @@
               </div>
             </div>
             <div class="filter form-models__fieldset">
-              <p class="form-models__legend">Модификация</p>
+              <p class="form-models__legend">Modification</p>
               <div class="filter__select-wrapper">
                 <div class="custom-select" id="modification-select">
                   <button class="custom-select__title filters__sorting-select" type="button">116 d</button>
@@ -600,7 +587,7 @@
               <p class="form-models__legend">R17</p>
               <div class="form-models__size-wrapper">
                 <div class="form-models__size-container">
-                  <p class="form-models__size-text">Передняя ось</p>
+                  <p class="form-models__size-text">Front axle</p>
                   <ul>
                     <li class="left-filter__option">
                       <input class="visually-hidden" type="checkbox" id="size5">
@@ -625,7 +612,7 @@
                   </ul>
                 </div>
                 <div class="form-models__size-container">
-                  <p class="form-models__size-text">Задняя ось</p>
+                  <p class="form-models__size-text">Rear axle</p>
                   <ul>
                     <li class="left-filter__option">
                       <input class="visually-hidden" type="checkbox" id="size10">
