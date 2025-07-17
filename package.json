@@ -1,7 +1,7 @@
 {
   "name": "spares-shop",
   "private": true,
-  "description": "Интернет магазин запчастей",
+  "description": "Online Auto Parts Store",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
