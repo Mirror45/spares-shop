@@ -1,92 +1,76 @@
 # 🚘 Spares-shop — Auto Parts Online Store
 
-**Spares-shop** is a responsive website for an auto parts e-commerce store. The project includes the core pages of a typical store: homepage, product catalog, and product detail. Built with **HTML**, **Sass**, and **JavaScript (ES6+)**, and powered by **Gulp 4** for task automation and optimization. The responsive layout and modular code structure make the project scalable and maintainable.
+**Spares-shop** is a responsive website layout for an auto parts e-commerce store. The project is a classic Multi-Page Application (MPA) that includes a homepage, a product catalog, and a product details page. The build process and resource optimization are handled by **Gulp 4**.
 
 ---
 
 ## 📄 Pages
 
-- **Homepage** — promotional banner, product categories, and featured sections.
-- **Catalog Page** — grid of parts, filtering options, and pagination.
-- **Product Page** — image gallery, accordion for details, and quantity selector.
+The following pages are implemented in the project (located in the root of `source/`):
+
+- **index.html** — Homepage (promotional banners, categories, popular products).
+- **catalog.html** — Catalog (product grid, filtering, pagination).
+- **product-page.html** — Product Page (gallery, description, quantity selector, rating).
 
 ---
 
 ## 🧰 Tech Stack
 
 ### 🔧 Core Technologies
+- **HTML5**: Semantic markup.
+- **Sass (SCSS)**: Modular style structure (BEM naming), variables, and mixins. Compiled via `dart-sass`.
+- **JavaScript (ES6+)**: Modular architecture using `import/export` syntax.
+- **Gulp 4**: Task runner for automating routine tasks.
 
-| Technology   | Description |
-|-------------|-------------|
-| **HTML5**    | Semantic markup, validated via [W3C Validator](https://validator.w3.org/nu/). |
-| **Sass (SCSS)** | Modular architecture (`blocks/`, `global/`, `libs/`), variables, mixins. |
-| **JavaScript (ES6+)** | 	Modular, clean code managing UI interactivity: accordions, custom filters with price sliders, tabs, toggles, menus, and product rating components. Implements progressive enhancement to keep core functionality accessible without JS. |
-| **Gulp 4**    | Build automation and optimization pipeline. |
+### ⚙️ Build Features (Gulp)
 
-### 🛠 Gulp Plugins Used
+Based on the `gulpfile.js` and `package.json` analysis, the project uses the following tools:
 
-| Plugin                | Purpose |
-|-----------------------|---------|
-| `gulp-dart-sass`      | Compile SCSS to CSS. |
-| `gulp-htmlmin`        | Minify HTML. |
-| `gulp-libsquoosh`, `gulp-webp` | Image optimization and WebP generation. |
-| `gulp-autoprefixer`, `gulp-clean-css` | CSS prefixing and minification. |
-| `gulp-svgstore`, `gulp-svgo` | SVG sprite generation and optimization. |
-| `browser-sync`        | Local development server with LiveReload. |
+| Category | Tool | Description |
+|-----------|------------|----------|
+| **CSS** | `gulp-dart-sass` | SCSS compilation. |
+| | `gulp-postcss` | CSS post-processing. |
+| | `autoprefixer` | Automatic vendor prefixing. |
+| | `postcss-csso` | Advanced CSS minification (replaces clean-css). |
+| **JavaScript** | `gulp-terser` | Compression and optimization of ES6+ code. |
+| **HTML** | `gulp-htmlmin` | HTML file minification. |
+| **Images** | `gulp-libsquoosh` | Image compression (jpg, png) and **WebP** generation. |
+| **SVG** | `gulp-svgmin` | Vector graphics optimization. |
+| | `gulp-svgstore` | SVG sprite generation (inline usage). |
+| **Server** | `browser-sync` | Local development server with live reload. |
 
 ---
 
-## 🎯 Implementation Highlights
+## 🧩 Implemented JS Modules
 
-- **BEM methodology** for CSS class naming.
-- **Responsive design** (Desktop First) using Flexbox and CSS Grid.
-- **Local fonts** connected directly from project files.
-- **Progressive enhancement**: core functionality works without JavaScript.
-- **Retina-ready images** for high-resolution displays.
-- **Swiper.js** used for product image carousels.
-- **Stylelint** and **EditorConfig** ensure consistent code quality and formatting.
-- **Custom modular JavaScript** managing:
-
-  - Footer accordions.
-
-  - Filter panel with price range slider, custom selects, checkboxes, and reset functionality.
-
-  - Responsive hamburger menu toggle and navigation link activation.
-
-  - Interactive product rating stars.
-
-  - Tabs navigation.
+The code is divided into components located in `source/js/main/`:
+- **menu.js**: Mobile menu management.
+- **swiper.js**: Slider initialization (using the Swiper library).
+- **filters.js**: Logic for catalog filters.
+- **accordeon.js**: Collapsible blocks (e.g., in the footer).
+- **tabs.js**: Tab switching for product information.
+- **product-rating.js**: Interactive star rating.
+- **favorite.js**: "Add to favorites" functionality.
 
 ---
 
 ## 📁 Project Structure
 
+```text
 source/
-
-├── sass/              # Styles (SCSS modules: blocks, global, libs)
-
-├── js/                # JavaScript modules (components)
-
+├── fonts/             # Local fonts (Barlow)
 ├── img/               # Images and icons
+│   └── icons/         # SVG icons for sprite generation
+├── js/                # JS modules
+│   └── main/          # UI components
+├── sass/              # Styles (SCSS)
+│   ├── blocks/        # BEM blocks
+│   ├── global/        # Global styles and variables
+│   └── libs/          # Library styles
+└── *.html             # HTML templates
 
-├── fonts/             # Local fonts
-
-├── *.html             # Markup pages
-
-└── manifest.webmanifest
-
-build/                 # Compiled production build
-
-├── css/               # Minified styles
-
-├── js/                # Minified scripts
-
-├── img/               # Optimized images + WebP
-
-├── fonts/             # Fonts copy
-
-└── *.html             # Final production pages
-
+build/                 # Production build folder (generated automatically)
+```
 
 ---
 
